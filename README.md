@@ -3,6 +3,27 @@ About qcdloop-fortran-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qcdloop-fortran-feedstock/blob/main/LICENSE.txt)
 
+
+About qcdloop-fortran
+---------------------
+
+Home: https://qcdloop.fnal.gov/
+
+Package license: MIT
+
+Summary: QCDLoop: one-loop scalar integrals
+
+Development: https://qcdloop.fnal.gov/
+
+Documentation: https://qcdloop.fnal.gov/
+
+QCDLoop is software for one-loop scalar Feynman integrals, evaluated
+close to four dimensions. For integrals with all massive internal lines
+the integrals are all known, both analytically and numerically.
+
+About qcdloop-fortran
+---------------------
+
 Home: https://qcdloop.fnal.gov/
 
 Package license: MIT
@@ -70,6 +91,13 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qcdloop-fortran-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24764&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/qcdloop-fortran-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -83,6 +111,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-qcdloop--fortran-green.svg)](https://anaconda.org/conda-forge/qcdloop-fortran) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/qcdloop-fortran.svg)](https://anaconda.org/conda-forge/qcdloop-fortran) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/qcdloop-fortran.svg)](https://anaconda.org/conda-forge/qcdloop-fortran) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/qcdloop-fortran.svg)](https://anaconda.org/conda-forge/qcdloop-fortran) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-qcdloop--fortran--static-green.svg)](https://anaconda.org/conda-forge/qcdloop-fortran-static) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/qcdloop-fortran-static.svg)](https://anaconda.org/conda-forge/qcdloop-fortran-static) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/qcdloop-fortran-static.svg)](https://anaconda.org/conda-forge/qcdloop-fortran-static) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/qcdloop-fortran-static.svg)](https://anaconda.org/conda-forge/qcdloop-fortran-static) |
 
 Installing qcdloop-fortran
@@ -95,41 +124,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `qcdloop-fortran-static` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `qcdloop-fortran, qcdloop-fortran-static` can be installed with `conda`:
 
 ```
-conda install qcdloop-fortran-static
-```
-
-or with `mamba`:
-
-```
-mamba install qcdloop-fortran-static
-```
-
-It is possible to list all of the versions of `qcdloop-fortran-static` available on your platform with `conda`:
-
-```
-conda search qcdloop-fortran-static --channel conda-forge
+conda install qcdloop-fortran qcdloop-fortran-static
 ```
 
 or with `mamba`:
 
 ```
-mamba search qcdloop-fortran-static --channel conda-forge
+mamba install qcdloop-fortran qcdloop-fortran-static
+```
+
+It is possible to list all of the versions of `qcdloop-fortran` available on your platform with `conda`:
+
+```
+conda search qcdloop-fortran --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search qcdloop-fortran --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search qcdloop-fortran-static --channel conda-forge
+mamba repoquery search qcdloop-fortran --channel conda-forge
 
-# List packages depending on `qcdloop-fortran-static`:
-mamba repoquery whoneeds qcdloop-fortran-static --channel conda-forge
+# List packages depending on `qcdloop-fortran`:
+mamba repoquery whoneeds qcdloop-fortran --channel conda-forge
 
-# List dependencies of `qcdloop-fortran-static`:
-mamba repoquery depends qcdloop-fortran-static --channel conda-forge
+# List dependencies of `qcdloop-fortran`:
+mamba repoquery depends qcdloop-fortran --channel conda-forge
 ```
 
 
