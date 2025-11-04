@@ -2,18 +2,20 @@ schema_version: 1
 
 context:
   name: qcdloop-fortran
-  version: 1.98
+  version: "1.98"
 
 recipe:
   name: ${{ name }}
   version: ${{ version }}
 
 source:
-  url: https://qcdloop.fnal.gov/QCDLoop-${{ version }}.tar.gz
+  url:
+    - https://qcdloop.fnal.gov/QCDLoop-${{ version }}.tar.gz
+    - https://github.com/hep-packaging-coordination/qcdloop-release-mirror/releases/download/1.98.0/QCDLoop-${{ version }}.tar.gz
   sha256: 917ba1daa6d526937a93e0e0b3392103660efdeef2880a0d9188bdc0ad9c0035
 
 build:
-  number: 2
+  number: 3
 
 outputs:
   - package:
